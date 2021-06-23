@@ -93,11 +93,7 @@
     </main>
     <script>
         feather.replace();
-        const nextURL = 'https://bit.ly/freqt/';
-        const nextTitle = 'freqtion';
-        const nextState = { additionalInformation: 'Updated the URL with JS' };
-        history.replaceState(nextState, nextTitle, nextURL);
-        console.log(nextURL);
+        history.replaceState({}, null, '/')
     </script>
 </body>
 </html>
