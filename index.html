@@ -10,7 +10,7 @@
      <title>freqtion</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="icon" href="https://i.ibb.co/C5H3mMW/favicon2s.png">
+    <link rel="icon" href="https://i.ibb.co/PG0h1xf/download.png">
     <script data-ad-client="ca-pub-4112379766065410" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">   <script src="https://unpkg.com/feather-icons"></script> 
     <script src="https://unpkg.com/browse/simple-icons@5.2.0/"></script>
@@ -20,7 +20,7 @@
     <main>
         <header>
             <a href="https://www.instagram.com/freqtion/" target="_blank" rel="noopener">
-                <img src=https://i.ibb.co/9YXS9mm/181705067-778968996323420-3732982900798484511-n.jpg" alt="@freqtion">
+                <img src="https://i.ibb.co/9YXS9mm/181705067-778968996323420-3732982900798484511-n.jpg" alt="@freqtion">
                 <h1>freqtion</h1>
                 <!-- <p>links n stuf</p> -->
             </a>
@@ -92,22 +92,12 @@
         <p class='codebyp'>Made with love</p>
     </main>
     <script>
-
         feather.replace();
-
-        function docReady(fn) {
-            // see if DOM is already available
-            if (document.readyState === "complete" || document.readyState === "interactive") {
-                // call on next available tick
-                setTimeout(fn, 1);
-            } else {
-                document.addEventListener("DOMContentLoaded", fn);
-           }
-        }    
-        docReady(function() {
-            history.replaceState({}, null, "/");
-        });
-        
+        const nextURL = 'https://bit.ly/freqt/';
+        const nextTitle = 'freqtion';
+        const nextState = { additionalInformation: 'Updated the URL with JS' };
+        history.replaceState(nextState, nextTitle, nextURL);
+        console.log(nextURL);
     </script>
 </body>
 </html>
