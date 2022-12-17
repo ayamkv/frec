@@ -102,7 +102,7 @@
     </main>
     <script>
         const d = new Date();
-        let year = d.getFullYear();
+        let year = d.getFullYear() + 1;
         document.getElementById("nwcd").innerHTML = year + " " + "Countdown";
         feather.replace();
         history.replaceState({}, null, '/')
