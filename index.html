@@ -84,7 +84,7 @@
                         <span class="new">ID</span>
                         <i data-feather="clock"></i>
                     </li>
-                    <h2>2021 Countdown</h2>
+                    <h2 id="nwcd"></h2>
                 </a> 
 
                 <a href="https://open.spotify.com/user/alm4b0oqld8z09rgtgcnzdhng?si=RM9LjZFqT2melnQ7hW_WTg&utm_source=copy-link" target="_blank" rel="noopener">
@@ -101,6 +101,9 @@
         <p class='codebyp'>Made with love</p>
     </main>
     <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("nwcd").innerHTML = year + " " + "Countdown";
         feather.replace();
         history.replaceState({}, null, '/')
     </script>
